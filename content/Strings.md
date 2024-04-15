@@ -14,12 +14,20 @@ int index = myString.indexOf("l"); // Gets index of first instance of a string. 
 int index2 = myString.indexOf("love"); // Also possible; would be the same as the index above.
 
 String sub = myString.substring(0, 2); // Will get the character at index 0 up to the index before 2. Its range is basically [0, 2)
-String sub2 = myString.substring(3) // Will return everything after and including index 3
+String sub2 = myString.substring(3) // Will return everything after and including index 3; [3,∞)
 
 String upper = myString.toUpperCase(); // Makes things upper case
 String lower = myString.toLowerCase();
 ```
->[!Note] You can ONLY use the methods `length()`, `substring()`, and `indexOf()` for strings
+>[!Note] You can ONLY use these methods for strings:
+> * `length()`
+> * `substring()`
+> * `indexOf()` 
+> * `toUpperCase()`
+> * `toLowerCase()`
+>
+>In some contexts you can also use:
+> * `charAt()`
 ### Reading strings as input
 ```java
 Scanner input = new Scanner(System.in);
@@ -36,7 +44,7 @@ if (temp.equals("My string")) {
 }
 ```
 
-### compareto
+### compareTo
 ``` java
 String s1 = "Apple", s2 = "Boy";
 // The method "compareTo" compare every character's ASCII value
@@ -50,4 +58,23 @@ if (s1.compareTo(s2) < 0) { // it returns a random negative value
 if (s2.compareTo(s1) > 0) {
 	// compareTo will return a positive value because 
 }
+```
+
+## ASCII ?
+```java
+char x = 'a' // this i show you dec;are character
+int a1 = x; // Will turn the character into its ASCII value
+
+char newChar = (char) (x + 7) // You can cast an integer into a character via the ASCII value
+
+int asciiValue = (int) x // this explicitly shows how the character is casted into a number to get its ascii value!
+```
+
+
+## Concatination
+
+```java
+String str = "";
+
+str += "Here's some content";
 ```

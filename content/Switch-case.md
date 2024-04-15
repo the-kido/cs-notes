@@ -17,3 +17,8 @@ switch(value) {
 	}
 }
 ```
+
+Every case is NOT its own scope. A scope is anything inside those curly brackets: `{}`
+This means that if you define a variable in case 1, then case 2 can still access that variable.
+#fact-check
+

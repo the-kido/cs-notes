@@ -20,6 +20,17 @@ for (int i = 0; i < 10; i++)
 	s.o.p("This is only printed once!");
 ```
 
+## For each
+To iterate over every item in an [[Arrays|array]] without needing the index, you can use a for each loop
+```java
+int[] intArr = {1,2,3,4,5};
+// The variable represents 1 item in the array.
+for (int k : intArr) {
+	// do whatever you want with k, and the loop will continue until all "k"'s are used up.
+}
+
+```
+
 ## Semantics with ++
 The "++" operator can be written two ways:
 ```java
@@ -40,4 +51,5 @@ int second = 0;
 System.out.println(++second); // "second" will be incremented, and then "1" is printed.
 ```
 >In both cases, `first` and `second` increment by 1, but the time at which the variables "update" is different
+
 

@@ -1,5 +1,6 @@
-# 1 Indent using this format:
+# 1 Use the Allman [[Indentation style]]:
 ![[Pasted image 20240205141354.png]]
+It looks like the above, where the brackets are on a new line. Replit likes to force K&R so watch out for that.
 # 2 Header
 The header will be like this:
 ```java
@@ -39,5 +40,6 @@ int intJohn;
 # 8 Break? More like i'll snap your neck in half
 * You can only use "break" in switch-cases
 
-# 9 [[Strings||String]] methods
-Only `length()`, `substring()`, and `indexOf()` are allowed
+# 9 String methods
+They are specified in the notes about [[Strings]] 
+

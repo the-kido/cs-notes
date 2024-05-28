@@ -1,6 +1,6 @@
 {
-  "name": "@jackyzha0/quartz",
-  "description": "🌱 publish your digital garden and notes as a website",
+  "name": "@the-kido/cs-notes",
+  "description": "Computer Science is wowza",
   "private": true,
   "version": "4.2.3",
   "type": "module",

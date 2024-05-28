@@ -1,13 +1,9 @@
-## Attributes / instance variables
-### Accessing instance variables
-
-## new
-new will create a new instance of the object
+## `new`
+`new` will create a new instance of the object
 
 ### Constructors
 ```java
 public class Point {
-	// Will always be public and followed by the name of the class
 	public int intX, intY;
 
 	// Every time we "new", it will call this now.
@@ -26,7 +22,7 @@ public class Point {
 * You cannot have two constructors of the same signature
 	* A signature is the number and type of parameters
 
-### this and super
+### `this` and `super`
 super allows you to access items in the parent classes. this allows you to access items inside of the class you are writing in.
 ```java
 public class Circle {
@@ -52,7 +48,6 @@ We don't always want our attributes to be changeable and instead be protected.
 public class Point {
 	private int intX;
 }
-
 
 //
 main() {
@@ -88,16 +83,8 @@ public class Point {
 - The X coord of a point cannot be static because each class has a different value
 
 
-## Inheritence
-- Every "class" inherients "Object" which has attributes and methods!
-	- Object.toString() is one of them and is inherited
-	- Point is a class, which inherients object, which inherients toString();
-	- Some objects like ArrayList will print the output nicely because it implements toString()
-	- @Override isn't needed but it communicates that you're overriding a method
-	- You don't need to call "toString" because Java will call it automatically for your when concatenating strings
-	- 
-
 ### Override
+>[!note] @Override isn't needed but it communicates that you're overriding a method
 ```java
 public class Point {
 	int intX, intY;
@@ -110,10 +97,10 @@ public class Point {
 }
 ```
 
-
-# Objects
+# Objects vs Classes
 An instance of a class creates objects, which can be manipulated and changed, unlike classes, which are the *blueprint*
 ### Method signatures
+
 ## Misc
-- Objects are stored in the stack ?
+- Objects are stored in the stack
 	

@@ -4,7 +4,7 @@ Interfaces can stack; you can have many interfaces on 1 class but you can only e
 
 ```java
 public interface Vehicle {
-	double rate = 0.088;
+	double rate = 0.088; // Automatically a constant (final)
 	public String getMake();
 	public String getModel();
 	public double getPrice();

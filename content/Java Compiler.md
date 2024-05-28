@@ -1,0 +1,1 @@
+The compiler is what turns text code into byte-code (going from .java to .class files). It is used preliminarily in order for the JVM to interpret the code. Unlike python, where every line is read *raw*.

@@ -49,40 +49,18 @@ public class Point {
 	private int intX;
 }
 
-//
+// somewhere else, in another class
 main() {
 	Point pt = new();
 	pt.intX = 10; // This will not be allowed because intX is private
 }
 ```
 
-
-Instead of directly changing the values, we instead give it an interface to mutate / accessor methods (get and set). This is called Encapsulation.
-```java
-public class Point {
-	private int intX;
-
-	// accesses intX without touching the private variable
-	public int getX() {
-		return intX;
-	}
-
-	// gives an interface to update intX
-	public int setX(int x) {
-		intX = x;
-	}
-}
-
-
-```
-
 ### Static
 - If the method / field is associated with the object, then it shouldn't be static
-- If there is a thing you want every class to be able to access that every object has in common, it can be static. 
-- For instance, the # of people could be static, but the individual properties of a person is not static. 
-- The X coord of a point cannot be static because each class has a different value
-
-
+- If there is a thing you want every class to share a value between, it can be static.
+	- For instance, the # of people could be static, but the individual properties of a person is not static. 
+- The X coord of a point cannot be static because each object will have a different value for it
 ### Override
 >[!note] @Override isn't needed but it communicates that you're overriding a method
 ```java
@@ -93,14 +71,12 @@ public class Point {
 	public String toString() {
 		return "x: " + intX + " y: " + intY;
 	}
-	
 }
 ```
 
 # Objects vs Classes
 An instance of a class creates objects, which can be manipulated and changed, unlike classes, which are the *blueprint*
-### Method signatures
 
 ## Misc
-- Objects are stored in the stack
+- Objects are stored in the [[Stacks||stack]] (Idk if we need to remember this or not)
 	

@@ -4,6 +4,7 @@ Java code is ran via the JVM, which:
 3. Runs the code for every device. 
 
 > Therefore, Java is kind of *both* interpreted and compiled, but not* fully* interpreted and not *fully* compiled
+> For our intents, we will assume it's interpreted
 
 
 

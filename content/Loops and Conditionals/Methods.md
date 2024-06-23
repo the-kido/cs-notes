@@ -1,7 +1,6 @@
 I love methods !11 
-
-For now, to declare a method you start it with `public static` and the data type it returns (`void` for nothing)
 #### Methods with a return type
+Before the method name, specify the return type. To return nothing, use `void`
 ```java
 // int is the return type; now we MUST call "return" in the method
 public static int sum(int intA, int intB) 
@@ -9,8 +8,8 @@ public static int sum(int intA, int intB)
 	return intA + intB;
 }
 ```
-* Every branch of your code must have a return
-`
+
+Every branch of your code must have a `return` if the return type is not `void`
 ```java
 public static boolean isEven(int intA)
 {
@@ -21,7 +20,7 @@ public static boolean isEven(int intA)
 
 ### Naming
 - Camel case (lower case first letter)
-- It should always be some sort of "action"
+- It should always be named some sort of "action"
 
 ### JavaDoc
 ```java

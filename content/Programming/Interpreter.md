@@ -1,3 +1,3 @@
-One part of the Java Virtual Machine ([[JVM]]) is its interpreter, which is then used to run code for difference devices.
+One part of the Java Virtual Machine ([[JVM]]) is its interpreter, which is then used to run code for different devices.
 
 Java does have a JIT compiler, which compiles the byte-code into machine code right before being ran by the [[JVM]] (Yes, still. Even as machine code the [[JVM]] is still significant in running Java code) for performance gains by working with hardware more closely (sort of like lower-level languages)

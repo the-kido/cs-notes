@@ -17,9 +17,6 @@ E.g: a label is 200 by 50. The Frame is 500 by 500. How do we center it?
 - x: 250 - 100 = 150 x
 - Rect Coords: (150, 225)
 
-
-
-
 * Main isn't used very much
 * If we want to make a Gui, make a new file called frmMyGui
 	* All forms will start with "frm"
@@ -42,7 +39,6 @@ E.g: a label is 200 by 50. The Frame is 500 by 500. How do we center it?
 ### Defining new widgets on a frame
 ![[Pasted image 20240227142036.png]]
 > Declare it first 
->
 ```java
 public class frmMyFrame extends JFrame implements ActionListener 
 {

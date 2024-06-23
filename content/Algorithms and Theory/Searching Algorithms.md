@@ -12,7 +12,8 @@ for (int i = 0; i < items.length; i++) {
 * Only works if the list is ordered
 * The index is $\frac{max + min}{2}$
 * Useful for finding the index of a certain value
-
+* `O(logn) complexity`
+at i
 ```java
 // the function returns the index of the item
 int mid;

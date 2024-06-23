@@ -1,8 +1,6 @@
 An object consists of
-* Instance variables. Ways to describe the object, i guess. These are "instance variables"
-	* int, double, strings, etc
-	* data structures can also be attributes
-	* They can also be other objects
+* Instance variables 
+	* They can be any object (int, String, User, etc)
 * Methods
 	*  Things you can do with the object
 * Constructors
@@ -18,6 +16,3 @@ An object consists of
 	- Find the distance to another point
 	- Find the slope of two points
 	- Etc.
-
-Concepts:
-- Encapsulation

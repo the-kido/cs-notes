@@ -4,8 +4,7 @@
 - `Top` gets the top element 
 
 
-
-a graph is a representation of vertices and edges?!!?
+A graph is a representation of vertices and edges?!!?
 - Points and things that connect the points 
 
 

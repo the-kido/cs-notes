@@ -14,5 +14,9 @@ Methods are placed on a stack. Calls keep stacking in a recursive method until e
 - Trees
 	- For loops are linear. But iterating though a tree requires splitting
 
+Example question from Jeg
+![[Pasted image 20240610125358.png]]
+- 11 calls. Returns 6
+- the 6th last calls were what returned 1. it's not 17 (i was confusled)
+- 
 
-### Tracing

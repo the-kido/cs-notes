@@ -17,6 +17,8 @@ Shape shape2 = new Shape();
 Square square = new Square();
 ```
 
+## Abstract Methods
+#todo
 ```java
 public class Shape {
 	public abstract double getArea();
@@ -29,11 +31,5 @@ public class Square extends Shape {
 		return l * w;
 	}
 }
-
 ```
 
-
-## Inheriting constructors
-- If the parent class has an empty-argument constructor, it will always implicitly run it. If there is only a constructor with arguments in the parent, then you must explicitly call it in the child classes.
-- Constructors aren't "inherited" but they can still be accessed with `super`
-- 

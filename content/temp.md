@@ -1,4 +1,4 @@
-Erros:
+Errors:
 1. Syntax errors
 	1. Will not compile
 2. Runtime errors

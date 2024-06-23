@@ -54,3 +54,10 @@ public class Main {
 	}
 }
 ```
+
+
+## adding an item to the end of the file
+```java
+FileWriter fr = new FileWriter(director, true); // starts writing at the end of the line
+```
+

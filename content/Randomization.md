@@ -1,5 +1,4 @@
-
-Math.random() has a range of [0, 1)
+`Math.random()` has a range of `[0, 1)`
 
 ```java
 

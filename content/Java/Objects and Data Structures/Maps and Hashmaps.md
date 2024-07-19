@@ -49,7 +49,7 @@ if (ages.containsKey("Jeremy")) {
 ```java
 int johnsAge = ages.get("John");
 ```
-### `keySet.()` 
+### `.keySet()` 
 >[!note] Returns a "Set" of all the keys, which update when the map updates. NOT an array or arrayList because you cannot add to it, only remove. Weird
 ```java
 for (String name : ages.keySet()) {

@@ -6,11 +6,11 @@
 * Find the biggest number and put it at the end
 ### Insertion sort
 * Assume the first number is good.
-* Go to the next number. If it should go before, it'll wiggle its way down (by swapping) until it reaches the right place
-* Or:  The first number is sorted. Check if the number after is bigger or not. if it is, then shove it to the right place 
+* Go to the next number. If it should go before, it'll **wiggle** its way down (by swapping) until it reaches the right place
+* Or: The first number is sorted. Check if the number after is bigger or not. if it is, then shove it to the right place 
 ![[Pasted image 20240610202515.png]]
 Observe the image above. The first row is the initial array of \[9, 8, 5, 6, 4]. 
-1. 8 wiggle it's way down.
+1. 8 wiggled its way down.
 2. 5 is wiggled down
 3. 6 is wiggled down (before 5!)
 4. 4 is wiggled down. Now it's complete!

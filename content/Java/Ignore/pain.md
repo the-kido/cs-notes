@@ -9,6 +9,4 @@ x = 0
 ![[Pasted image 20240327144918.png]]
 
 
-![[Pasted image 20240327145039.png]]
-&&'s cannot be split, but ORs can be
-![[Pasted image 20240327145055.png]]
+

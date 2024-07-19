@@ -31,3 +31,6 @@ while (min <= max) {
 }
 return -1;
 ```
+
+# Worst case 
+The worst case is that the item isn't even in the array.

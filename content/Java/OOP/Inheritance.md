@@ -46,12 +46,14 @@ public double area() {
 ```java
 public class Main {
 	publc static void main() {
-#1
+							/**#1**/
 		Point circle = new Circle(10,10,10);
 		System.out.println(circle); // Will call toString() of the Circle class because it's part of the point class.
-#2		
+		
+							/**#2**/
 		System.out.println(circle.getArea()); // This will not work and throws a syntax error because "point" does not contain a getArea() methhod
-#3
+
+							/**#3**/
 		Circle point = new Point(10,10); // Point does not contain everything a circle does, therefore this is illegal.
 	}
 }

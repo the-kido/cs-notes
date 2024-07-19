@@ -37,7 +37,6 @@ Scanner input = new Scanner(System.in);
 input.next();
 ```
 
-
 ## Comparing strings
 ```java
 // You cannot use double-equal signs. it will not work

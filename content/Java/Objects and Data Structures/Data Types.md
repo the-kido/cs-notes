@@ -14,6 +14,7 @@ Primitive types (values with a `?` are wrong but Jeg said so)
 | double  | 8 bytes   | Real numbers              |
 | float   | 4 bytes   | Real numbers              |
 | String  | 32 bytes? | all characters            |
-| Char    | 1 byte?   | single letter             |
+| char    | 1 bit?    | single letter             |
 | bool    | 1 byte    | true, false               |
 | Objects | ~~~       | ~~~                       |
+|         |           |                           |

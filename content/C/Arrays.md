@@ -20,3 +20,24 @@ int_array[9] = 20; // Sets the last value to 20
 - In C, you can just access indices **OUTSIDE OF THE RANGE** (whyyy)
 ![[Pasted image 20240719103308.png]]
 - The above example is really good at demonstrating junk values. `test` was never set, however the third index of `arr` *was* set (by accident; it's outside of the array's size!), and it spilled over into the container of memory that `test` has now been allocated too! The old data doesn't get reset!!!
+
+### Array and pointer relation
+- The head of an array is just a pointer to the start the list. Using \[]'s after a pointer goes to the bit of memory at that index *after* the head.
+```c
+int array[3];
+
+int *also_an_array = &array;
+
+// These are ALL the same
+also_an_array[0] = 1;
+*(also_an_array + 1) = 3; // This uses pointer arithmetic
+array[2] = 5;
+```
+This mean's it is also valid to pass an array with `int *array` instead of `int array[]` because they are the same
+
+## Pointer arithmetic\
+- Instead of indexing with \[]'s, we can offset pointers by adding onto the pointer of the head of the array.
+```c
+int array[5]; // Allocate 5 integer's worth of data
+
+```

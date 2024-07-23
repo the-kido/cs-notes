@@ -6,7 +6,6 @@ It REQUIRES a return type, name, and optionally some arguments.
 
 Arguments are *new* local variables, meaning that inside of the function's block, the passed in values are copied into the function's scope. This is when arguments are [[Pointers and Manipulating Memory|Pass-By-Value]]
 
-
 ```c
 int my_function(int);
 
@@ -49,3 +48,14 @@ int pow(int);
 ```bash
 gcc test.c -o test.exe -Werror
 ```
+
+## Functions which take no arguments
+- If you don't include anything inside the brackets, you are still able to add arguments to a function call (which is not what you want). So, add `void` instead to signify NO arguments at all
+```c
+void my_function() {} // Takes in some arbitrary things; returns nothing
+void my_other_function(void) {} // Takes in nothing; returns nothing
+```
+
+## Constant Arguments
+- Put `const` before a parameter so that the argument will be unable to change within the function.
+- This is useful because it'll show whether a function will mutate your values or not.

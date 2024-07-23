@@ -1,4 +1,0 @@
-- Arrays
-- Strings and string manipulation 
-- Pointers (especially with structs)
-- and then the data structures. 

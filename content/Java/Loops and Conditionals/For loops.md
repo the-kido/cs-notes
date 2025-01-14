@@ -21,7 +21,7 @@ for (int i = 0; i < 10; i++)
 ```
 
 ## For each
-To iterate over every item in an [[Arrays|array]] without needing the index, you can use a for each loop
+To iterate over every item in an [[CSCA48 (C Lang)/Arrays|array]] without needing the index, you can use a for each loop
 ```java
 int[] intArr = {1,2,3,4,5};
 // The variable represents 1 item in the array.

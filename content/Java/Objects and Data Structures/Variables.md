@@ -5,4 +5,4 @@ What is a variable?
 - A memory location in the RAM
 - Do not fly on the Boeing 373 max 
 
-They store [[Data Types]]
+They store [[Data Types]] and cannot be changed in C during runtime 

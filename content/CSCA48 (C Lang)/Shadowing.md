@@ -1,4 +1,5 @@
-#### "What if the parameter has the same name as a variable?"
+## "What if the parameter has the same name as a variable?"
+
 ```c
 int x = 3;
 int pow(x) {

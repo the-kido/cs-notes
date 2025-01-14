@@ -29,8 +29,8 @@ void main()
 }
 ```
 - typedef gives an alias to `struct Restaraunt_Score`. Instead of typing `string Restaraunt_Score` before declaring a variable using that data type, we can just use `Review`
-- #todo why "do" we did the `struct` before it anyway
-\
+- #todo why "do" we add the `struct` before it anyway
+
 ## Accessing fields
 - You can use the '.' operator to access a field from an object
 	- `my_object.field`

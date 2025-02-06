@@ -28,6 +28,8 @@ void main()
     printf("After:|%s|", w2);
 }
 ```
+
+
 - A string is 1 size more than the # of characters because you MUST include the pointer!
 - You cannot update string literals (A pointer to a string literal = you cannot update. An array, you can?)
 ```c
@@ -37,3 +39,4 @@ w1[24] = '?' // This will cause a seg fault
 char[] w1 = "I love the colour green!"; 
 w1[24] = '?' // This doesn't do anything bad
 ```
+

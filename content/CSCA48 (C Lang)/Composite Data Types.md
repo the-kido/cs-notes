@@ -12,6 +12,9 @@ typedef struct Restaurant_Score // We are declaring a new type!
 - The name of the composite is `Restaraunt_Score` (because we are using typedef this isn't really required though)
 - All `Restaraunt_Score`'s contain the 3 fields inside of it (name, address, and score)
 - `Review` is the name of the data type (so this is like the class name)
+
+ 
+
 # typedef
 
 ```c

@@ -1,4 +1,4 @@
-Before getting into pointers, just know that what's inside of a [[Functions|function]] *stays* in a function. Data inside of one's scope cannot be accessed by other functions (unless we *return* the value, or declare the variable in the *global scope* - outside of every method).
+Before getting into pointers, just know that what's inside of a [[CSCA48 (C Lang)/Functions|function]] *stays* in a function. Data inside of one's scope cannot be accessed by other functions (unless we *return* the value, or declare the variable in the *global scope* - outside of every method).
 
 >[!note] Global variables are in the global scope. Local variables are in the local scope
 >Example of a local scope includes:

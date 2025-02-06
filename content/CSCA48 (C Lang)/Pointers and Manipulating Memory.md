@@ -1,6 +1,6 @@
 > A pointer is a variable that contains an address to a bit of memory 
 
-#  Address-of operator: &\
+#  Address-of operator: &
  >Gets the address of a value.
 
 You can only access the address of variables. You cannot set or update the address, only values

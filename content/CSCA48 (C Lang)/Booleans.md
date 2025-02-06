@@ -8,3 +8,7 @@ Conditional operators
 - a >= b
 - a <= b
 - a != b
+Logical operators
+ - &&
+- ||
+- !

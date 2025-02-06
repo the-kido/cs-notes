@@ -14,22 +14,32 @@
 ## `#include<string.h>`
 ^^ This is a library with useful string things
 #### `strcpy(destination, value)`
-- Hard copies the string from "value" into the destination.
+- Hard copies the string from `value` into the `destination`.
 - You can also use it to initialize strings so that there is no reference between the two strings in memory. If you use the `=` operator and update 1 string, the other will also change! That is most likely not intended behavior.
 ```c
 char cool_string[1024];
 strcpy(cool_string, "I am so cool, you guys");
 // But it's the same as just doing
 char cooler_string[1024] = "I am even cooler, you guys";
+
+
+
+// However
+char bad_string[1024];
+char other_string[1024] = "This is no good. We are sharing!";
+// GOOD
+strcpy(bad_string, other_string); // There is no sharing.
+// BAD
+bad_string = other_string; // Changing either string will update both of them.
 ```
 #### `strcat(string_before, string_added)`
-- Concatenates the two strings. Yes, you cannot just use `+` between two things any more. 
+- Concatenates the two strings. Yes, you cannot just use `+` between two strings any more. 
 - It will extend the original string, so it's destructive...
 #### `strlen(string)`
 - Gives the length of a string.
 #### `strcmp(string_1, string_2)`
 - Compares two strings. Returns 0 if they are equal and other numbers if they aren't. Similar to [[Java/Objects and Data Structures/Strings#compareTo()|compare() in Java]]
-\
+
 ## String literals
 String literals are stored in **read-only** memory. Those are the ones made with quotation marks : ""
 You CANNOT change or update them in any way. 

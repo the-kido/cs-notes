@@ -1,10 +1,13 @@
 Functions you will need:
 - `scanf` for numbers
-- `getchar` for characters and other weird characters
-- `fgets` for strings. "get string"
+- `getchar` for characters and other weird characters.
+- `fgets(char* out_str_reference, int len_of_array, FILE* file)` for strings. "get string"
+	- f --> "file" (but in this case it's for anything. `stdin` is the "file" in our cases)
+	- get --> "obvious"
+	- s --> "string"
 
 ```c
-scanf("expected input formatted with format specifiers", outputed, pointers);
+scanf("expected input formatted with format specifiers", many, outputed, pointers);
 
 // Here's an example:
 

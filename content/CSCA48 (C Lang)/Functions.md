@@ -42,15 +42,9 @@ int pow(int);
 ```
 
 <sup>note*</sup>This is a bit weird but bear with me here:
-- C is old, so it doesn't really care if you don't declare the method before using it. However, by compiling with the `-Werror` flag, it will flag the error *correctly*. 
-- #self-note ask if this is anything to worry about in the future
-- The command might look like this: 
-```bash
-gcc test.c -o test.exe -Werror
-```
-
+- C is old, so it doesn't really care if you don't declare the method before using it. However, by compiling with the `-Werror` flag, it will flag the error *correctly*. Refer to [[Compilers and Compiling#GCC|this note]] where I go over the flag.
 ## Functions which take no arguments
-- If you don't include anything inside the brackets, you are still able to add arguments to a function call (which is not what you want). So, add `void` instead to signify NO arguments at all
+- If you don't include anything inside the brackets, you are still able to add arguments to a function call (which is not what you want) depending on the compiler. So, add `void` instead to signify NO arguments at all.
 ```c
 void my_function() {} // Takes in some arbitrary things; returns nothing
 void my_other_function(void) {} // Takes in nothing; returns nothing
@@ -59,3 +53,34 @@ void my_other_function(void) {} // Takes in nothing; returns nothing
 ## Constant Arguments
 - Put `const` before a parameter so that the argument will be unable to change within the function.
 - This is useful because it'll show whether a function will mutate your values or not.
+
+# Functions in Memory
+Take this example Paco gave
+```c
+#include<stdio.h>
+int square(int x)
+{
+	int s;
+	s = x * x;
+	return s;
+}
+
+int main()
+{
+	int input;
+	int result;
+	input = 7;
+	result=square(input);
+	return 0;
+}
+```
+Here is the order the lockers are stored
+1. input
+2. result
+3. `<return for main>`
+4. A set of boxes for `square()` holding params and returned values
+	1. x
+	2. s
+	3. `<return>`
+	4. #todo what if memory is allocated dynamically inside `square()`. Then the data wouldn't be under `square()` would it?
+5. 

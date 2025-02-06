@@ -51,3 +51,7 @@ printf("%04d", y); // Prints 24 with 2 0's before it.
 ```
 #todo play w/ this more. i wanna print 0's before and after the number.
 
+### Spicy
+```c
+
+```

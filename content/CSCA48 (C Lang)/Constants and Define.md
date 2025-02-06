@@ -17,3 +17,8 @@ void main()
 ```
 - In this case, TOES is equal to "`= 1024;`" *literally*. The line `test toes` is actually just `test = 1024;`
 - So not only can you declare some constant values. You can essentially store lines of code with `#define` with no regulations at all.
+
+
+>[!note] Unlike variables, define dies NOT take extra memory! That can be useful for cases where you have a constant like $\pi$ that you use everywhere
+
+**

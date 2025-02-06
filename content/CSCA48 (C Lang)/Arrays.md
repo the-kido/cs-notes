@@ -13,14 +13,18 @@ int_array[0] = 10; // Sets the first value to 10
 int_array[9] = 20; // Sets the last value to 20
 ```
 
-> In memory, arrays are just a bunch of consecutive boxes
+> In memory, arrays are just a bunch of consecutive boxes. Each box is sized depending on the data type of the array.
 
 ## Things to remember
 - Just like with other variables, arrays will not set default values and will be full of garbage values.
 - In C, you can just access indices **OUTSIDE OF THE RANGE** (whyyy)
+	- You can also access negative indices. Pray you don't hit a segfault though.
 ![[Pasted image 20240719103308.png]]
 - The above example is really good at demonstrating junk values. `test` was never set, however the third index of `arr` *was* set (by accident; it's outside of the array's size!), and it spilled over into the container of memory that `test` has now been allocated too! The old data doesn't get reset!!!
-
+### `Segfault`
+A `segfault` is caused when you access memory that is allocated to another program. If you fetch an index of an array that is far too big, and it hits memory stored by another program, you'll review a segfault.
+However, if the memory is owned by you, arguably worse things will happen. It will just read that info that you've reserved whether intentionally or not.
+> This means if you postiviely or negatively index
 ### Array and pointer relation
 - The head of an array is just a pointer to the start the list. Using \[]'s after a pointer goes to the bit of memory at that index *after* the head.
 ```c
@@ -35,7 +39,7 @@ array[2] = 5;
 ```
 This mean's it is also valid to pass an array with `int *array` instead of `int array[]` because they are the same
 
-## Pointer arithmetic\
+## Pointer arithmetic
 - Instead of indexing with \[]'s, we can offset pointers by adding onto the pointer of the head of the array.
 ```c
 int array[5]; // Allocate 5 integer's worth of data

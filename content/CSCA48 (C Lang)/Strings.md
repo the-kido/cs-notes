@@ -41,7 +41,7 @@ bad_string = other_string; // Changing either string will update both of them.
 - Compares two strings. Returns 0 if they are equal and other numbers if they aren't. Similar to [[Java/Objects and Data Structures/Strings#compareTo()|compare() in Java]]
 
 ## String literals
-String literals are stored in **read-only** memory. Those are the ones made with quotation marks : ""
+String literals are stored in **read-only** memory. Those are the ones made with quotation marks: ""
 You CANNOT change or update them in any way. 
 
 Here's an example:
@@ -55,6 +55,9 @@ w2[5] = '!'; // Segfault
 Here's what they look like in the debugger:
 ![[Pasted image 20240720094735.png]]
 - Since string literals are read only, and the char* for w2 is only pointing to the first character in the string literal, you CANNOT change it, which is why it causes the [[Segfault]] (you aren't allowed to edit that bit of memory!)
+- This means you cannot pass them into functions that ask for char arrays, like `strcpy`!
+
+
 
 ## Weirdness
 1. Character literals and escaping them

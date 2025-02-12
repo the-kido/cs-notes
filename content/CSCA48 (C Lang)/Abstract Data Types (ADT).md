@@ -2,10 +2,14 @@
 
 ^^From Paco's notes^^
 
-We call some data types ADT's because we are not specifying how it's being implemented (because there are many ways to do that!)
-This bit of semantics is important because, no matter what implementation or language you are using, the base behavior should be the same
+My TD;DR version: 
+- An ADT specifies an object's operations and methods of organizing its data. 
+- It's stress-free as there's no implementation to remember.
+- Because there's no one implementation, there is *abstraction* so you can choose the best way to implement the data type for your specific problem.
 
-Some examples are
+ This bit of semantics is important because, no matter what implementation or language you are using, the base behavior should be the same.
+
+## Some examples of ADTs
 - [[Lists|List ADTs]]
 - Queue ADT's
 	- Enqueuing and Dequeuing

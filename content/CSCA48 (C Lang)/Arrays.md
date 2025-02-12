@@ -16,6 +16,11 @@ int_array[9] = 20; // Sets the last value to 20
 > In memory, arrays are just a bunch of consecutive boxes. Each box is sized depending on the data type of the array.
 
 ## Things to remember
+- You CANNOT directly set the value of an array to something else. 
+	- For instance, if we have an array `int array[10]`, we cannot say `array = other_array`. The only thing we can do is initialize it with the `[]` syntax.
+	- We *can* update what it points to, however!
+		- `*arr = *other_array` works!
+		- #todo why doesn't `*arr = other_array` work when I thought arrays where just pointers? 
 - Just like with other variables, arrays will not set default values and will be full of garbage values.
 - In C, you can just access indices **OUTSIDE OF THE RANGE** (whyyy)
 	- You can also access negative indices. Pray you don't hit a segfault though.

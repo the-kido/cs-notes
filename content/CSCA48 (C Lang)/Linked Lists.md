@@ -1,4 +1,5 @@
->[!note] All items point to each other in a chain. One item is the head, which points to an item, which points to an item, which points to an item...
+>All items point to each other in a chain. One item is the *head*, which points to an item, which points to an item, which points to an item... 
+>...eventually you get to the *tail* with no pointer to the next item inside. Phew, it's over.
 
 ![[Pasted image 20240721174246.png|500]]
 

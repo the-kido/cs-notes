@@ -1,3 +1,8 @@
+>The bundling of info together into a "compound" or "composite"
+- They have "fields" (1 "component" of the data type)
+Why is it useful? It simplifies many complicated things into one "thing". 
+
+
 Although there aren't classes in C, there are Composite Data Types, which are an amalgamation of previously made data types!
 ```c
 typedef struct Restaurant_Score // We are declaring a new type! 
@@ -12,8 +17,6 @@ typedef struct Restaurant_Score // We are declaring a new type!
 - The name of the composite is `Restaraunt_Score` (because we are using typedef this isn't really required though)
 - All `Restaraunt_Score`'s contain the 3 fields inside of it (name, address, and score)
 - `Review` is the name of the data type (so this is like the class name)
-
- 
 
 # typedef
 
@@ -32,7 +35,7 @@ void main()
 }
 ```
 - typedef gives an alias to `struct Restaraunt_Score`. Instead of typing `string Restaraunt_Score` before declaring a variable using that data type, we can just use `Review`
-- #todo why "do" we add the `struct` before it anyway
+- The reason why we still have to write `struct Restaurant_Score` is for compatibly reasons because, remember, this language is *ancient*.
 
 ## Accessing fields
 - You can use the '.' operator to access a field from an object
@@ -64,8 +67,8 @@ r2 = r1 // Now the name, address, and score are copied 1:1 into r2
 ```
 ![[Pasted image 20240721155453.png]]
 - The entire object is copied. Everything about it!
-
-
+- This is also the case when you pass it into a function; the parameter is a copy if what was passed in.
+- Remember that things like arrays are not fully copied! Only their pointer address is copied (as that is what an array is, a pointer. And what do pointers store? The *address*)
 
 ## Useful resources
 - https://www.youtube.com/watch?v=CI9dRTvzgqE

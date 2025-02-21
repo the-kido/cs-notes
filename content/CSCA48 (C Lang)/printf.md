@@ -31,7 +31,6 @@ The %'s are `Format Specifier`'s and are used to format strings with data from v
 ### Decimal points and whole number points
 - It rounds
 - it's weird
-- he goes over it in the pi example.
 - strange times.
 
 Remember that pi question in week 1 lecture notes? Well there is this convenient notation to only print out x number of characters of a variable. 
@@ -51,7 +50,20 @@ printf("%04d", y); // Prints 24 with 2 0's before it.
 ```
 #todo play w/ this more. i wanna print 0's before and after the number.
 
-### Spicy
-```c
+let `a.b` be the precision.
+1. 'a' is the number of characters printed. If there are less characters than `a` is, it'll add spaces at the front. If it's too small, it won't actually do anything (it doesn't cut off numbers)
+2. `b` is the number of decimals. It rounds at the decimal or whole number we end at.
+	1. So `12.567` with the format of `5.0` would be `   13` 
+	2. `12.567` with `2.3` would be `12.567`
 
+# The same thing but for integers
+
+In `a.b`, a has basically the same behavior (it'll ensure there are a characters. If there are not enough numbers, add spaces at the start until we hit `a`. If there's too many numbers, we still print them all).
+However `b` is more similar to `a` with integers. No rounding happens though. Instead, if `a < numbers`, then nothing happens. If `a > numbers`, then it will print extra `0`'s
+
+So `1234` with `8.5` would be `   01234`
+```c
+printf("8.5%d", 1234); // Prints what i said abv
 ```
+And `98` with `3.1` would be ` 98`
+And lastly 123 with `0.4` will be `0123`

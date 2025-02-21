@@ -33,6 +33,8 @@ float ans_2 = (float) a / b; // Will be 2.5, because a is a float and will carry
 int ans_3 = (float) a / b; // Will be 2 again! The answer is 2.5, but because the variable is of type int, it will implicitly cast it back.
 ```
 
+>[!note] Integer division simply chops off the decimal part, similar to type-casting. No rounding up or down! Think of `-15 / 2`. It would be `-7.5` with decimals, but is `-7` as an integer, and NOT `-8`!
+
 So tl;dr. The compiler will implicitly cast from types to other types when assigning. However, there are edge cases where we need to explicitly cast to get intended behavior.
 - When doing arithmetic with mismatching types
 - When printing data of one type when expecting another type.

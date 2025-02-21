@@ -21,16 +21,20 @@ char cool_string[1024];
 strcpy(cool_string, "I am so cool, you guys");
 // But it's the same as just doing
 char cooler_string[1024] = "I am even cooler, you guys";
+// Unless we changed our mind and want to update cooler_string
+cooler_string = "ah ha new string!" // This does NOT work! You can only use string literals at declaration of the variable. You must use strcpy instead
+strcpy(cooler_string, "ah ha new string!");
+```
 
-
-
-// However
+- Here is a better example of why it's useful
+```c
 char bad_string[1024];
 char other_string[1024] = "This is no good. We are sharing!";
-// GOOD
-strcpy(bad_string, other_string); // There is no sharing.
 // BAD
 bad_string = other_string; // Changing either string will update both of them.
+
+// GOOD
+strcpy(bad_string, other_string); // There is no sharing.
 ```
 #### `strcat(string_before, string_added)`
 - Concatenates the two strings. Yes, you cannot just use `+` between two strings any more. 
@@ -57,8 +61,6 @@ Here's what they look like in the debugger:
 - Since string literals are read only, and the char* for w2 is only pointing to the first character in the string literal, you CANNOT change it, which is why it causes the [[Segfault]] (you aren't allowed to edit that bit of memory!)
 - This means you cannot pass them into functions that ask for char arrays, like `strcpy`!
 
-
-
 ## Weirdness
 1. Character literals and escaping them
 ```c
@@ -75,4 +77,13 @@ chr[2] = 'y';
 chr[3] = 0; // This will terminate the string, too.
 
 // Also note that, even if the string spills out of the range of the array, when it's treated like a string it doesn't care. It just waits until the escape sequence is hit.
+```
+3. Having a string with the entire thing filled with non-zero characters implies there is no delimiter for it to hit!
+```c
+char a[10];
+for (int i = 0; i < 10; i++)
+{
+	a[i] = 'A' + 1;
+}
+printf("%s", a); // WIll print A-->J, and then garbage until we hit the delimiter.
 ```

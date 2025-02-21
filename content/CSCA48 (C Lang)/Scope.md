@@ -18,3 +18,27 @@ int x; // Global scope
 >	int y; // Local scope 
 >}
 
+# Global variables
+> Can be accessed by any function
+
+```c
+#include<stdio.h>
+int global_int = 5;
+// Global vars are stored for the entire program
+
+int main(void)
+{
+	printf("%d%", global_int);
+}
+```
+
+Somewhere else in memory are global things stored. Not in any specific function (kind of like when allocating memory dynamically)
+
+### Downside of global vars:
+- for long programs, you can lose track of how the var is being changed.
+- local vars are easier to debug.
+- So we try to avoid them.
+
+### Uses
+- Having some data that all sorts of methods will need to affect. (i.e. an image)
+- Writing bad code

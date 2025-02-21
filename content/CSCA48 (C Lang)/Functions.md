@@ -50,6 +50,13 @@ void my_function() {} // Takes in some arbitrary things; returns nothing
 void my_other_function(void) {} // Takes in nothing; returns nothing
 ```
 
+## Functions which return `void`
+`void` = No return type 
+
+Useful for
+- Printing something
+- Changing global variables
+- Wasting time (lol)
 ## Constant Arguments
 - Put `const` before a parameter so that the argument will be unable to change within the function.
 - This is useful because it'll show whether a function will mutate your values or not.
@@ -83,4 +90,3 @@ Here is the order the lockers are stored
 	2. s
 	3. `<return>`
 	4. #todo what if memory is allocated dynamically inside `square()`. Then the data wouldn't be under `square()` would it?
-5. 

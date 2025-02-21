@@ -26,7 +26,6 @@ Per function, memory is automatically allocated to:
 3. Return values
 
 
-
 Here are some examples:
 - When declaring a variable (like in functions).
 - When a function takes in parameters to copy in arguments (pass-by-value)
@@ -62,18 +61,6 @@ void main(void)
 }
 ```
 
-## Dynamic memory allocation
-This is required when you need to reserve space for some data without having a direct reference to it. Otherwise, once you leave the scope that your volatile memory was allocated, it will be freed!
-When would you need this? Well think about creating a [[Linked Lists|linked list]]. 
-- You have to temporarily create a node, and then make it pointed to by another node. 
-- However, whatever temporary variable you're using is keeping track of the memory it allocated, so outside of scope it will free it. You don't want that! Otherwise, the data will get deleted!!!
-
-#### `void*` calloc(`count`, `size`)
-- Allows memory to be reserved on-demand! This memory is not constrained by any scope and will never be freed by itself (you gotta do that lol)
-- `sizeof()` gives the size of data structures and compound data structures
-- Lose the pointer? Well, that memory is never going to be released then.
-#### free(`pointer`)
-- If you use `calloc` but don't have a complementary `free`, you're doing something wrong, and are gonna have a memory leak
 
 
 ## References

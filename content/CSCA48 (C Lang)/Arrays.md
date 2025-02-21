@@ -1,3 +1,9 @@
+A [[Containers|container]] which reserves many boxes of 
+	- A specific type
+	- A fixed size
+The `index` is an "offset", or the # of boxes *after* the start of the array.
+-  `arr[i]` is equivalent to ``*(arr+i)``
+
 >[!note]
 >You can make an array of any type with square brackets after the name (i know, it's a bit cursed compared to Java)
 >```c
@@ -14,10 +20,13 @@ int_array[9] = 20; // Sets the last value to 20
 ```
 
 > In memory, arrays are just a bunch of consecutive boxes. Each box is sized depending on the data type of the array.
+> 
+> When making the memory model, the first box of the array is tagged with the name with the type `char[]`; the succeeding boxes have nothing! 
 
 ## Things to remember
 - You CANNOT directly set the value of an array to something else. 
 	- For instance, if we have an array `int array[10]`, we cannot say `array = other_array`. The only thing we can do is initialize it with the `[]` syntax.
+		- ==No assigning things to arrays!==
 	- We *can* update what it points to, however!
 		- `*arr = *other_array` works!
 		- #todo why doesn't `*arr = other_array` work when I thought arrays where just pointers? 
@@ -27,9 +36,9 @@ int_array[9] = 20; // Sets the last value to 20
 ![[Pasted image 20240719103308.png]]
 - The above example is really good at demonstrating junk values. `test` was never set, however the third index of `arr` *was* set (by accident; it's outside of the array's size!), and it spilled over into the container of memory that `test` has now been allocated too! The old data doesn't get reset!!!
 ### `Segfault`
-A `segfault` is caused when you access memory that is allocated to another program. If you fetch an index of an array that is far too big, and it hits memory stored by another program, you'll review a segfault.
+A `segfault` is caused when you access memory that is allocated to another program. If you fetch an index of an array that is far too big, and it hits memory stored by another program, you'll run into a segfault.
 However, if the memory is owned by you, arguably worse things will happen. It will just read that info that you've reserved whether intentionally or not.
-> This means if you postiviely or negatively index
+> This means you can positively or negatively index
 ### Array and pointer relation
 - The head of an array is just a pointer to the start the list. Using \[]'s after a pointer goes to the bit of memory at that index *after* the head.
 ```c

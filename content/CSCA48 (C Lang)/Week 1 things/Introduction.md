@@ -24,7 +24,7 @@ Code starts in `main()`
 /*
 This program prints hello world. Poggers
 */ 
-#import<stdio.h>
+#include<stdio.h>
 
 int main(void)
 {

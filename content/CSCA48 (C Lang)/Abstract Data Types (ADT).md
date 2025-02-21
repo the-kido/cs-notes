@@ -4,7 +4,8 @@
 
 My TD;DR version: 
 - An ADT specifies an object's operations and methods of organizing its data. 
-- It's stress-free as there's no implementation to remember.
+	- They are written in English or pseudo code
+- It's stress-free as there's no implementation to remember and is generic to any language.
 - Because there's no one implementation, there is *abstraction* so you can choose the best way to implement the data type for your specific problem.
 
  This bit of semantics is important because, no matter what implementation or language you are using, the base behavior should be the same.

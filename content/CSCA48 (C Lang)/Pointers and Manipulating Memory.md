@@ -2,14 +2,16 @@
 
 #  Address-of operator: &
  >Gets the address of a value.
+ >`&` = "address of"
 
-You can only access the address of variables. You cannot set or update the address, only values
+You can only access the address of *variables*. You cannot set or update the address, only values. You cannot get the reference of an expression like `&(a + 1)` since `a + 1` isn't stored in memory 
 # Dereference operator: *
 > Gets the value from an address. 
+> `*` = "contents of "
 
 There are two ways to use it
 - `*(a pointer or pointer expression) = expression 
-- or
+ or
 - `variable = *(a pointer or pointer expression)
 
 Here is an example of using both the & and * operators. 
@@ -24,9 +26,18 @@ int *my_pointer = &my_int;
 *my_pointer = 20; // my_int is now 20
 ```
 
-## NULL
-- It's 0. Again. There's, like, 3 ways to write 0 apparently. But in this case it shows, explicitly, that a pointer is pointing to nothing
+Paco uses parenthesis because it makes wacky lines clearer.
+```c
+int x = 5;
+int* p = &x;
 
+*(p) = *p * *p; // This is real.
+
+*(p) = (*(p)) * (*(p)); // This is real.
+
+```
+## NULL
+- It's 0. Again. There's, like, 3 ways to write 0 apparently (`0`, `"\0"`, and `NULL`). But in this case it shows, explicitly, that a pointer is pointing to nothing
 ## Passing by reference
 - Memory is allocated for the position of the pointer instead of a copy of the argument. 
 - ![[Pasted image 20240719142003.png|600]]
@@ -61,9 +72,4 @@ int square_array(int array[10]) // the number after "array" doesn't mean anythin
     }
 }
 ```
-
-
-
-
-
-#fact-check why does the examples use `*(pointer_name)` instead of just `*pointer_name`
+ 

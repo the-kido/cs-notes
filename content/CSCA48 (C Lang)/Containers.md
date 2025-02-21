@@ -10,3 +10,4 @@ Some examples include
 	- I.e. Netflix is a set/collection of movies
 - Manageable
 	- Somehow efficiently manageable, useable, and easy to maintain.
+- Usually the elements are unique

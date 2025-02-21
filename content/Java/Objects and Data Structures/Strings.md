@@ -47,6 +47,8 @@ if (temp.equals("My string")) {
 ```
 
 ### compareTo()
+Find the difference of the characters between the two strings. I.e. the difference between A and B is `-1` as B is larger. 
+
 ``` java
 String s1 = "Apple", s2 = "Boy";
 // The method "compareTo" compares every character's ASCII value

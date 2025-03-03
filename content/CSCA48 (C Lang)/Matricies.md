@@ -36,6 +36,6 @@ int arr[2][3];
 >`*(*arr + 3) = 4`
 >
 >The top example doesn't work. Why? Because we cannot "manipulate arrays" as it says by the compiler. What does that mean? Well consider `matrix[2][3]` and `array[i] = *(array + i)`
->Using the literal definition of `[]`, we see `matrix[2][3] = *(matrix + 2)[3]`. Clearly `*(matrix + 2)` is still an array as we can index [3] from it. That should explain why it gives the error: `*(arr + 3)` is 
->
+>Using the literal definition of `[]`, we see `matrix[2][3] = *(matrix + 2)[3]`. 
+>Clearly `*(matrix + 2)` is still an array as we can index [3] from it. That should explain why it gives the error: `*(arr + 3)` is 
 >

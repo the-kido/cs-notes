@@ -76,7 +76,7 @@ void p2(void)
 	two_string[3] = '!';
 	two_string[4] = '\n';
 	two_string[5] = 0;
-	printf("%s\n", s2);
+	printf("%s\n", two_string);
 }
 
 void main(void)
@@ -86,7 +86,8 @@ void main(void)
 	// This prints Two!\b twice
 }
 ```
-#todo explain this better.  basically it prints `TWO! ` twice because the memory is freed from the previous call and is junk, but is then taken by s1 and it so happens to be the values set in p2.
+
+Basically it prints `TWO! ` twice because the memory is freed from the previous call and is junk, but is then taken by s1 and it so happens to be the values set in p2.
 - This is not always bound to happen. it's merely a coincidence. On my computer, it usually happens though.
 Then if you reserve a string of size 100, there is a good chance that `TWO! ` is in there. 
 Remember that the places where memory is stored is often quite random. For instance, if you:

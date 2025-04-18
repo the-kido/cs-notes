@@ -7,6 +7,12 @@ int array_2d[2][3]; // 2 rows and 3 columns.
 #### Offset formula
 
 $$\text{Offset = (column \#} \times \text{column size}) + \text{row \#}$$
+# Syntax
+You cannot declare a 2D array w/o a set size:
+```c
+int someMatrix[][]; // NOT allowed! Will not compile
+int* someMatrix; // Allowed!
+```
 
 # Example
 

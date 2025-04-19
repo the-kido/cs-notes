@@ -260,7 +260,7 @@ BSTs: These properties hold:
 - Data in the right tree is >= the data
 
 
- Searching for an item in a BST:
+##### Searching for an item in a BST (refer to page 35 of chapter 4)
 ```c
 Node* search(Node *r, int key)
 {
@@ -279,14 +279,14 @@ Node* search(Node *r, int key)
 }
 
 ```
-#todo make sure this good (confirm w/ assignment)
+ 
 
 
 To estimate the time it takes to search, we should note the work done will be at most "the height of the BST" (that being the length of the longest path from a leaf to the root)
 
 "How many levels are there in a full BST?" #todo The answer should be "it depends" (i.e. could be N to $\log_2(N)$ but nothing in between)
 
-Inserting items into a BST
+##### Inserting items into a BST (refer to page 34 of chapter 4)
 ```c
 Node* insert(Node *r, Node *new_node)
 {
@@ -303,8 +303,31 @@ Node* insert(Node *r, Node *new_node)
 	{
 		r->left = insert(r->left, new_node);
 	}
+	return root; // for safety, but the above should DEFINITELY be called.
 }
 ```
+> The code paco gave is WAY more bloated than this its honestly surprising.
+
+The *height* if N items added like a linked list (i.e. the items are added in order) will be $N-1$ 
+- "The height of a BST is defined as the length of the longest path from the root of the tree to a leaf node." so wjat the frick why is it not N then
+	- Oh actually "length" implies we're counting the "connections". So just having a root implies the height is 0 then right? #todo Should be true
+However if the items are added in a way that creates a *complete* BST then the height is given by $floor(\log_2(N))$
+- I.e. if N = 7, then $log_2(N) = floor(2.80735492206) = 2$
+- For a BST to be complete, it cannot have any gaps! It's packed with every parent node pointing to 2 nodes 
+![[Pasted image 20250418203456.png]]
+
+> The avg Big O for search / insert in a BST is $O(\log(N))$
+> The *setup* for a BST is $O(N\log(N))$ as for each $N$ node we insert it and that has on average $O(log(N))$ complexity. Any succeeding "insert" will just be $O(\log(N))$ as well
+
+##### Deletion
+I talk abt this in [[03-05#deleting yay]]
+
+Its complexity consists of finding the node to delete (on average log2(N) ) and then doing either case 1, 2 or 3. But those all have a fixed number of operations. Therefore deletion is also just $O(\log(N))$
+
+##### Traversals in BSTS
+I did in [[03-05]] again
+
+Anyway after all of that, we can conclude 
 
 
 ## exercises

@@ -41,7 +41,7 @@ int intJohn;
 * You can only use "break" in switch-cases
 
 # 9 String methods
-They are specified in the notes about [[CSCA48 (C Lang)/Strings]] 
+They are specified in the notes about [[Strings]] 
 
 # 10 Javadoc every method
 

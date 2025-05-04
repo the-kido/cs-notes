@@ -4,7 +4,7 @@ export default (() => {
     }
    
     YourComponent.css = `
-    p.red-text {
+    p {
       color: red;
     }
     `

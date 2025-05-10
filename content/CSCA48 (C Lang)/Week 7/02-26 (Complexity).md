@@ -167,7 +167,6 @@ Debugging:
 2. Using `printf()`
 3. Even if a case is very difficult to reach, it is still your duty to fix it!
 
-![[1q81b4bg.png]]
 # Tb Notes for things i should remember
 
 Computational Complexity: A way of comparing different algorithms in terms of *computational cost* for carrying out a task. 

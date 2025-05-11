@@ -28,14 +28,16 @@ Again with the levels: each of those *brackets* can be one gate since the connec
  
 However, in logic, our inputs will always be A, B, C and **never** $\neg A, \neg B, \neg C$;  we use an [[Logic Gates#Inverter|inverter]] to pass in those negated variables into the gates as required. 
 ![[Bool to Logic Example Part 2.png]]
-- This is what it *should* look like (I told you it become spaghetti) after using inverters. I added some colour just to show what was inverted, but no colour is required. 
+- This is what it *should* look like (I told you it becomes spaghetti) after using inverters. I added some colour just to show what was inverted, but no colour is required. 
 ## Vice Versa
 ![[Vice Versa Example 1.png|300]]
+
 As a expression, the circuit might look like this:
 $$(\neg A \wedge B) \vee (B \wedge C)$$
 Note that inversion as an operation is unary, so it can't really have it's own "level" unlike AND, OR, or XOR operators.
 
 Let's get spicier:
+
 ![[Vice Versa Example 2.png|500]]
 
 > First, baby steps:

@@ -1,4 +1,4 @@
-the cheat sheet can be any font so long as it's letter sized / A4
+The cheat sheet can be any font so long as it's letter sized / A4
 
 grace credits exist okok
 
@@ -155,6 +155,7 @@ Directory tree model!
 Oh the tree is "partial" and there are WAYY more thingys.
 - like we dont just have `ls` and `sh` programs lol
 
+## Path(name)s
 `/home/trebla/B09/lec1.txt` goes from the **root** to a subfolder to another one; you get the idea
 `B09/lec1.txt` uses the *local directory*
 
@@ -162,4 +163,7 @@ Oh the tree is "partial" and there are WAYY more thingys.
 
 `..` refers to the "before" parent directory
 
-`.` helps you refer to the currect directory ? #todo see why  this is useful
+`.` helps you refer to the current directory ? #todo see why  this is useful
+- Oh, pretend you're in `/home/kido/filesToSort` and you want to call a program `sort-files` which takes in a directory. Well instead of typing out the whole path from home, we can just do `sort-files ./` I think. #todo confirmmm
+- 
+

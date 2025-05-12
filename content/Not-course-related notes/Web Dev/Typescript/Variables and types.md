@@ -10,7 +10,7 @@ const z = 2145325;
 ```
 
 
-If a [[Web Dev/Typescript/Interfaces|interface]] has a field that is not required, you can add a `?` right in front of it
+If a [[Not-course-related notes/Web Dev/Typescript/Interfaces|interface]] has a field that is not required, you can add a `?` right in front of it
 ```ts
 interface Useless
 {

@@ -38,6 +38,10 @@ The truth table is as follows:
 "Exclusive or". "Only if one is true"
 ![[XOR.png|300]]
 - if both vars are 0 or 1, then the result is 0.
+- Alternatively:
+	- Returns a high value if inputs are different
+	- or
+	- Returns a high value when the number of high inputs is odd 
 - if 1 var is 0 and the other is 1, then the result is 1.
 - Basically this is like the "English" version of "OR" 
 	- If A = 1 and B = 1, you don't say A **or** B are true in English. You say that A **and** B is true because that's a stronger, clearer statement.

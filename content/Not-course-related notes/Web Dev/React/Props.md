@@ -1,0 +1,1 @@
+React LOVES `unidirectional` data flow. Unlike OOP, it's far more annoying to simply "change" the [[States]] of a component from outside the component itself without exposing it, or, idiomaticly

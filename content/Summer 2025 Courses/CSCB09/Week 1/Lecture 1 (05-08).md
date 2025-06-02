@@ -167,3 +167,4 @@ Oh the tree is "partial" and there are WAYY more thingys.
 - Oh, pretend you're in `/home/kido/filesToSort` and you want to call a program `sort-files` which takes in a directory. Well instead of typing out the whole path from home, we can just do `sort-files ./` I think. #todo confirmmm
 - 
 
+

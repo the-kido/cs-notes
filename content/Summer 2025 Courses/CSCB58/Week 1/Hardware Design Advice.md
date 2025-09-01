@@ -1,1 +1,0 @@
-Unlike software, which is step-by-step, hardware is a bunch of connections between logic gates and devices; things orchestrated together and working at the same time; NOT a sequence of instructions like code is.

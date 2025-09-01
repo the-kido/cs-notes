@@ -1,0 +1,1 @@
+ circuit diagram in *CMOS logic*. Could also be called a "Transistor / CMOS circuit" 

@@ -1,0 +1,6 @@
+- All processes have environment variables
+- Names and values are strings (usually the names are all caps, like PATH, HOME, TZ, etc.)
+- Initialised by the kernel
+	- They are passed down to their children terminals (perfect copies of the og variables) meaning that changing them there will NOT affect the OG
+- `printenv` prints the environment variables.
+- Otherwise they are **identical** to regular shell variables (the only difference is that environment variables try to stick to UPPER CASE styling)

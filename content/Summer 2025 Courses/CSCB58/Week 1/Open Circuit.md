@@ -1,0 +1,2 @@
+When a part of a circuit is not connected to either [[Vcc and Ground|Vcc or ground]]
+

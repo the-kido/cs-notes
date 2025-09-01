@@ -1,0 +1,5 @@
+- Going from the state 011 to 110 changes *two* bits, one of which can change *first* (but this is random)
+	- You might temporarily be in the state of 111 or 010 which is read by the combination circuit (which doesn't rely on clock timings!)
+	- This is a *race condition* and are often unsafe 
+	- In the example outputting high when`111` occurs, going from 011 to 110 may cause problems, so we have to accommodate that
+		- 010 is not a problem cuz it's not the `111` we seek

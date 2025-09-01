@@ -1,0 +1,3 @@
+`position: relative` sets a, say, divider, as the "relative position" for children, some of whom may be absolute.
+- This makes this div the playground, the *bounds*, for any children who assumes an absolute value
+`position: absolute` for any element allows its position to be relative to the closest element it's relative to (if you've never used `position: relative` anywhere, it most likely means the position is relative to the *whole window*)

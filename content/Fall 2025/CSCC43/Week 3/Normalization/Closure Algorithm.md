@@ -1,0 +1,1 @@
+Use [[Fall 2025/CSCC43/Week 3/Closures]]

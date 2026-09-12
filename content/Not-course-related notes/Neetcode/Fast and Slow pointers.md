@@ -1,0 +1,2 @@
+For "Linked List Cycle Detection"
+The idea is that the fast pointer will be able to lap the slow pointer if there is a cycle. If there isn't a cycle, the slow pointer will always trail behind the fast one.

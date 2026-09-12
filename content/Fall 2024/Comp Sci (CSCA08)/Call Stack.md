@@ -1,0 +1,1 @@
+- A frame that contains its own variables (passed and local)

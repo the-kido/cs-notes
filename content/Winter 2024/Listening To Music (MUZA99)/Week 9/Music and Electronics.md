@@ -1,0 +1,58 @@
+- Electronic music means a LOT of things with different contexts
+- It refers to
+	- The genre of music (EDM for instance)
+	- Music performed entirely on electronic instruments
+		- Music performed w/o electronics is <span class="testable">acoustic music</span>
+		- I.e. an electric guitar that is amplified is not acoustic 
+	- Music that uses a combination of electronic and acoustic elements
+		- <span class="testable">Electroacoustic Music</span>
+- <span class="testable">Synthesizer</span>: An instrument that produces/modifies sounds via electronics
+	- Usually looks like a piano
+	- Sounds can be made via synthesis electronically
+- <span class="testable">Amplifier</span>: Increases the volume of electric signals 
+	- electric guitar/bass for instance
+- <span class="emphasis">Theremin</span>: the earliest electronic instruments
+	- Something to do with hands and it looks cool
+	- ghost sounds
+- <span class="testable">Musique Concrete</span>
+	- A style of music where all found sounds are used/manipulated to make a fancy composition
+	- Paris
+	- #todo 
+	- The drip of water! etc.
+		- `Dripsody` (1955) made in UofT describes does this very thing
+	- <span class="testable">Acousmatic Music</span>  is music that is only played through speakers
+- We also talk about how computers produce music too wowowowowow
+- `1 of IV` by Pauline Oliveros is pure electronic. 
+- Electronics are used everywhere!
+- <span class="emphasis">Sampling</span> taking acoustic sounds and sequencing them.
+- <span class="testable">MPCs </span> (Music Production Centers) utilize samples. it is a device for sampling, sequencing, and  production of music
+- <span class="testable">Audio Mixing</span>:
+	-  The process of digitizing, editing, and combining individual tracks in (usually a multitrack) recording
+	- EQing:
+		- adjusting treble / bass frequencies
+		- Mixing engineer = works in studio
+		- Live sound engineer = works at music venues
+		- Mastering Engineers = take a mixed track and prepare it for distribution
+	- Some effects used by sound engineers include:
+		- <span class="testable">Reverb</span>
+			- Making a sound sound spatial like in a cave
+		- <span class="testable">Delay</span>
+			- Making a sound repeat but at a delay like an echo over mountains
+	- <span class="testable">DAWs</span> (digital audio workstation) is an audio mixing software. FL studio!
+
+##### Sound Waves
+- Amplitude: Peak to peak distance
+- Wavelength: distance at which a wave repeats
+- Waveforms
+	- Sin (1 frequency), Square (sounds like woodwinds), Triangle (sounds smoother than a square), Sawtooth (rough)
+- <span class="emphasis">Sound Envelope</span> describes changes in a sound thru timee
+- <span class="testable">ADSR</span>: wait something I've already seen before but didn't understand!?
+	- Attack: The time taken for the sound to rise from silence to peak
+	- Decay: the time for the level from the attack level to the sustain level (decline intensity)
+	- Sustain: The level maintained before the release
+	- Release: the time taken for the sound to fall to silence
+	- ![[Pasted image 20250328221731.png]]
+- Every sound has ADSR
+
+
+

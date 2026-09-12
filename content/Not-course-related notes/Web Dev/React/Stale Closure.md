@@ -22,6 +22,6 @@ function aComponent()
 ```
 
 
-The problem we'll have is that inside of `addThing` we define a function `() => removeThing(id)` inside of another function. This creates a [[Closures|closure]] which as the name suggests "remembers" the value of `things` but it does not update what it remembers if `things` changes in the future.
+The problem we'll have is that inside of `addThing` we define a function `() => removeThing(id)` inside of another function. This creates a [[Not-course-related notes/Functional Programming/Closures|closure]] which as the name suggests "remembers" the value of `things` but it does not update what it remembers if `things` changes in the future.
 
 That means, when `newThings.onRemoved` is invoked, it will call an ancient version of `removeThing()` whose `modules` (which is "remembered" by closure)
